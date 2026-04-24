@@ -105,30 +105,30 @@ export const DRIBBBLE_SHOTS: DribbbleShot[] = [
     id: 'd2',
     title: 'E-commerce App UI',
     image: 'https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&q=80&w=800&h=600',
-    link: 'https://dribbble.com/shots/26523931-Smart-home-app-UI-design'
+    link: 'https://dribbble.com/shots/26494367-Ecommerce-application-UI-design'
   },
   {
     id: 'd3',
     title: 'Glasses Store UI',
     image: 'https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800&h=600',
-    link: 'https://dribbble.com/shots/26523931-Smart-home-app-UI-design'
+    link: 'https://dribbble.com/shots/26461243-Glasses-Store-UI'
   },
   {
     id: 'd4',
     title: 'Flight Booking UI',
     image: 'https://images.unsplash.com/photo-1570710891163-6d3b5c47248b?auto=format&fit=crop&q=80&w=800&h=600',
-    link: 'https://dribbble.com/shots/26523931-Smart-home-app-UI-design'
+    link: 'https://dribbble.com/shots/26436377-Flight-booking-app-UI-design'
   },
   {
     id: 'd5',
     title: 'Cafe Kiosk UI',
     image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=800&h=600',
-    link: 'https://dribbble.com/shots/26523931-Smart-home-app-UI-design'
+    link: 'https://dribbble.com/shots/26410095-Cafe-Kiosk-UI-design'
   },
   {
     id: 'd6',
     title: 'Television UI Design',
     image: 'https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?auto=format&fit=crop&q=80&w=800&h=600',
-    link: 'https://dribbble.com/shots/26523931-Smart-home-app-UI-design'
+    link: 'https://dribbble.com/shots/26407774-Television-UI-design'
   }
 ];
