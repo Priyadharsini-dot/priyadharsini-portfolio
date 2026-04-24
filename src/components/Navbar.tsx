@@ -2,6 +2,8 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X, FileText } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
+import { RESUME_LINK } from '../constants';
+
 interface NavbarProps {
   onHomeClick: () => void;
   onAboutClick: () => void;
@@ -26,7 +28,7 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
     { name: 'Work', id: 'work' },
     { name: 'Visuals', id: 'dribbble' },
     { name: 'About', action: onAboutClick },
-    { name: 'Resume', href: 'https://drive.google.com/file/d/1XC5jVIIGPre5wZNhuztaFj1zg4whkLim/view?usp=drive_link', external: true }
+    { name: 'Resume', href: RESUME_LINK, external: true }
   ];
 
   const handleNavLinkClick = (link: any) => {

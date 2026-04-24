@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { FileText, ArrowDown } from 'lucide-react';
+import { RESUME_LINK } from '../constants';
 
 export function Hero() {
   return (
@@ -55,7 +56,7 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center gap-6 md:gap-12"
           >
             <a 
-              href="https://drive.google.com/file/d/1XC5jVIIGPre5wZNhuztaFj1zg4whkLim/view?usp=drive_link" 
+              href={RESUME_LINK} 
               target="_blank"
               className="group relative flex items-center justify-center gap-3 px-8 py-4 md:px-10 md:py-5 bg-accent-primary text-white rounded-full font-bold transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-accent-primary/40 whitespace-nowrap w-full sm:w-auto"
             >

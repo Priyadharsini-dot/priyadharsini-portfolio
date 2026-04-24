@@ -94,6 +94,8 @@ export interface DribbbleShot {
   link: string;
 }
 
+export const RESUME_LINK = 'https://drive.google.com/file/d/11Es0300vJ0EQ4luTCibKVnHL4wC9PHcO/view?usp=drive_link';
+
 export const DRIBBBLE_SHOTS: DribbbleShot[] = [
   {
     id: 'd1',
