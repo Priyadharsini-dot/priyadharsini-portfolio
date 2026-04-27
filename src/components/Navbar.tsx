@@ -45,7 +45,7 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
       <motion.nav 
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="fixed top-0 left-0 w-full z-50 px-3 py-3 md:px-12 flex justify-between items-center bg-gradient-to-b from-brand-bg/80 to-transparent backdrop-blur-sm"
+        className="fixed top-0 left-0 w-full z-50 px-4 py-6 md:px-12 md:py-10 flex justify-between items-center bg-gradient-to-b from-brand-bg/80 to-transparent backdrop-blur-sm"
       >
         <button 
           onClick={onHomeClick}
