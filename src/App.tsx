@@ -5,7 +5,7 @@ import { Hero } from './components/Hero';
 import { ProjectCard } from './components/ProjectCard';
 import { CaseStudy } from './components/CaseStudy';
 import { About } from './components/About';
-import { DribbbleSection } from './components/DribbbleSection';
+import { DesignGallery } from './components/DesignGallery';
 import { Footer } from './components/Footer';
 import { PROJECTS } from './constants';
 import { Project } from './types';
@@ -62,7 +62,7 @@ export default function App() {
         </div>
       </section>
 
-      <DribbbleSection />
+      <DesignGallery />
 
       <About />
       

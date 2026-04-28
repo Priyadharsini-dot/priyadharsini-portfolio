@@ -14,26 +14,23 @@ export interface Project {
   coverImage: string;
   description: string;
   overview: string;
+  context: string;
   myRole: string;
   targetUsers: string;
   problem: string;
   research: string;
   painPoints: string[];
-  persona: {
-    name: string;
-    role: string;
-    goal: string;
-    frustration: string;
-    image: string;
-  };
   userJourney: string;
-  wireframes: string;
+  userFlow: string;
   uiDesign: string;
+  finalUiImages?: string[];
+  iterations: string;
   solution: string;
   outcome: {
     metrics: string[];
     summary: string;
   };
+  behanceLink: string;
   sections: CaseStudySection[];
 }
 

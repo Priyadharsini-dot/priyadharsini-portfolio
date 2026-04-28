@@ -20,10 +20,11 @@ export function Hero() {
               UI / UX Designer & Visual Storyteller
             </span>
             <h1 className="leading-[1.1] md:leading-[1.1] mb-8 max-w-4xl">
-              Transforming complex problems into <span className="text-[#0A0A0B]/40">empathetic digital experiences.</span>
+              Hi, I’m <span className="text-[#0A0A0B]">Priyadharsini V</span> <br />
+              <span className="text-[#0A0A0B]/40">UI/UX Designer crafting intuitive digital experiences.</span>
             </h1>
             <p className="text-[18px] md:text-[24px] text-[#667085] max-w-2xl leading-relaxed">
-              I’m Priyadharsini V, a UI/UX designer focused on crafting intuitive, user-centered solutions that bridge the gap between business goals and human needs.
+              I design user-friendly interfaces by understanding real user problems and creating simple solutions.
             </p>
         </motion.div>
         

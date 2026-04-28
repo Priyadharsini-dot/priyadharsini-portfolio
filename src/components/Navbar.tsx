@@ -26,7 +26,7 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
 
   const navLinks = [
     { name: 'Work', id: 'work' },
-    { name: 'Visuals', id: 'dribbble' },
+    { name: 'Visuals', id: 'gallery' },
     { name: 'About', action: onAboutClick },
     { name: 'Resume', href: RESUME_LINK, external: true }
   ];
