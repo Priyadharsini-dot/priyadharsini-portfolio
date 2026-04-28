@@ -33,20 +33,20 @@ export default function App() {
       
       <Hero />
 
-      <section id="work" className="px-6 md:px-12 pt-1 pb-8 md:py-24 relative">
-        <div className="max-w-4xl mb-3 md:mb-6 relative z-10">
+      <section id="work" className="px-6 md:px-12 pt-1 pb-8 md:py-32 relative bg-white">
+        <div className="max-w-4xl mb-12 md:mb-20 relative z-10">
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="inline-block"
           >
-            <span className="text-xs uppercase tracking-[0.4em] font-bold mb-1 md:mb-2 block text-accent-primary">
-              Empathetic Solutions
+            <span className="text-[14px] font-bold text-[#7F56D9] uppercase tracking-[0.2em] mb-4 block">
+              Case Studies
             </span>
-            <h2 className="text-3xl md:text-7xl font-serif leading-tight">
+            <h2 className="leading-[1.2]">
               Solving problems through <br className="hidden md:block" />
-              <span className="italic text-accent-secondary">user-centric design.</span>
+              <span className="text-[#0A0A0B]/40">user-centric intentionality.</span>
             </h2>
           </motion.div>
         </div>

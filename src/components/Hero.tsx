@@ -4,80 +4,51 @@ import { RESUME_LINK } from '../constants';
 
 export function Hero() {
   return (
-    <section className="pt-12 pb-4 md:pt-40 md:pb-20 px-6 md:px-12 flex flex-col relative overflow-hidden">
-      {/* Interactive Background Elements */}
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.2, 1],
-          rotate: [0, 90, 0],
-        }}
-        transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-        className="absolute -top-24 -right-24 w-96 h-96 bg-accent-primary/20 rounded-full blur-[120px] pointer-events-none"
-      />
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.3, 1],
-          x: [0, 50, 0],
-        }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-1/2 -left-24 w-64 h-64 bg-accent-secondary/20 rounded-full blur-[100px] pointer-events-none"
-      />
+    <section className="pt-32 pb-12 md:pt-60 md:pb-32 px-6 md:px-12 flex flex-col relative overflow-hidden bg-[#FCFCFD]">
+      {/* Subtle Background Elements */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-purple-50 rounded-full blur-[100px] opacity-60 -mr-48 -mt-48 pointer-events-none" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-50 rounded-full blur-[100px] opacity-40 -ml-24 -mb-24 pointer-events-none" />
 
-      <div className="max-w-6xl relative z-10">
+      <div className="max-w-6xl relative z-10 w-full">
         <motion.div
-          initial={{ opacity: 0, x: -40 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
-        >
-          <span className="text-xs uppercase tracking-[0.3em] font-semibold text-accent-secondary mb-1 md:mb-2 block">
-            UI / UX Designer & Visual Storyteller
-          </span>
-          <h1 className="text-[2.5rem] xs:text-5xl md:text-[8vw] leading-[1.1] md:leading-[0.9] font-serif mb-4 md:mb-6 text-left">
-            Transforming <span className="text-accent-primary">problems</span> <br className="hidden xs:block" />
-            into <span className="italic text-accent-secondary">digital experiences</span> <br className="hidden xs:block" />
-            that matter.
-          </h1>
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-8 md:mb-12"
+          >
+            <span className="text-[14px] font-bold text-[#7F56D9] uppercase tracking-[0.2em] mb-4 block">
+              UI / UX Designer & Visual Storyteller
+            </span>
+            <h1 className="leading-[1.1] md:leading-[1.1] mb-8 max-w-4xl">
+              Transforming complex problems into <span className="text-[#0A0A0B]/40">empathetic digital experiences.</span>
+            </h1>
+            <p className="text-[18px] md:text-[24px] text-[#667085] max-w-2xl leading-relaxed">
+              I’m Priyadharsini V, a UI/UX designer focused on crafting intuitive, user-centered solutions that bridge the gap between business goals and human needs.
+            </p>
         </motion.div>
         
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 md:gap-12 pt-6 border-t border-white/5 items-stretch lg:items-end w-full">
-          <motion.div 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 0.8 }}
-            transition={{ delay: 0.8, duration: 1 }}
-            className="max-w-2xl text-base md:text-xl font-light leading-relaxed text-white/40 text-justify"
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="flex flex-col sm:flex-row items-center gap-6"
+        >
+          <a 
+            href={RESUME_LINK} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 px-8 py-4 bg-[#7F56D9] text-white rounded-xl font-bold hover:bg-[#6941C6] transition-all shadow-lg shadow-purple-500/20 w-full sm:w-auto"
           >
-            I’m Priyadharsini V, a UI/UX designer crafting intuitive and empathetic digital experiences. I simplify complex user problems into elegant, high-impact design solutions.
-          </motion.div>
+            <FileText size={20} /> View Resume
+          </a>
 
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-col sm:flex-row items-center gap-6 md:gap-12"
+          <button 
+            onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
+            className="flex items-center gap-3 px-8 py-4 bg-white text-[#344054] border border-[#D0D5DD] rounded-xl font-bold hover:bg-[#F9FAFB] transition-all w-full sm:w-auto text-center justify-center"
           >
-            <a 
-              href={RESUME_LINK} 
-              target="_blank"
-              className="group relative flex items-center justify-center gap-3 px-8 py-4 md:px-10 md:py-5 bg-accent-primary text-white rounded-full font-bold transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-accent-primary/40 whitespace-nowrap w-full sm:w-auto"
-            >
-              <FileText size={20} /> View Resume
-              <div className="absolute inset-0 rounded-full bg-white opacity-0 group-hover:opacity-10 transition-opacity" />
-            </a>
-
-            <button 
-              onClick={() => document.getElementById('work')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group flex items-center gap-3 text-white/40 hover:text-white transition-all cursor-pointer"
-            >
-              <span className="text-[10px] uppercase tracking-[0.4em] font-bold">Explore Projects</span>
-              <motion.div
-                animate={{ y: [0, 5, 0] }}
-                transition={{ duration: 2, repeat: Infinity }}
-              >
-                <ArrowDown size={18} className="opacity-60" />
-              </motion.div>
-            </button>
-          </motion.div>
-        </div>
+            Explore Projects <ArrowDown size={18} />
+          </button>
+        </motion.div>
       </div>
     </section>
   );

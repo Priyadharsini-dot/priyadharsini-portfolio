@@ -15,38 +15,32 @@ const BehanceIcon = ({ size = 24 }) => (
 
 export function Footer() {
   return (
-    <footer className="px-6 md:px-12 py-4 md:py-24 border-t border-brand-line bg-brand-bg relative overflow-hidden">
-      <div className="absolute top-0 right-0 w-64 h-64 bg-accent-tertiary/10 rounded-full blur-[100px] pointer-events-none" />
+    <footer className="px-6 md:px-12 py-12 md:py-32 bg-[#FCFCFD] border-t border-[#EAECF0] relative overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-purple-50 rounded-full blur-[100px] opacity-60 pointer-events-none" />
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end relative z-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start relative z-10 max-w-6xl mx-auto">
         <div>
-          <h2 className="text-4xl md:text-6xl mb-8">Let's build <br /> <span className="italic text-accent-primary">impactful products.</span></h2>
-          <a href="mailto:priyaamutha9191@gmail.com" className="text-xl md:text-2xl underline underline-offset-8 decoration-accent-secondary/40 hover:decoration-accent-secondary transition-all">
-            priyaamutha9191@gmail.com
-          </a>
+          <span className="text-[14px] font-bold text-[#7F56D9] uppercase tracking-[0.2em] mb-4 block">Get in Touch</span>
+          <h2 className="leading-tight mb-8">Let's build something <span className="text-[#0A0A0B]/40">meaningful together.</span></h2>
+          <div className="space-y-6">
+            <a href="mailto:priyaamutha9191@gmail.com" className="text-[20px] md:text-[24px] font-bold text-[#0A0A0B] hover:text-[#7F56D9] transition-all flex items-center gap-3">
+              <Mail className="text-[#7F56D9]" /> priyaamutha9191@gmail.com
+            </a>
+          </div>
         </div>
         
-        <div className="flex flex-col md:items-end gap-12">
-          <div className="flex gap-6">
-            {[
-              { Icon: Linkedin, url: 'https://www.linkedin.com/in/priyadharsini-v-270a383b8' },
-              { Icon: BehanceIcon, url: 'https://www.behance.net/priyadharsiniv' },
-              { Icon: Mail, url: 'mailto:priyaamutha9191@gmail.com' }
-            ].map(({ Icon, url }, idx) => (
-              <motion.a 
-                key={idx}
-                href={url}
-                target={url.startsWith('mailto') ? undefined : "_blank"}
-                whileHover={{ y: -5, color: '#8B5CF6' }}
-                className="opacity-40 hover:opacity-100 transition-opacity"
-              >
-                <Icon size={24} />
-              </motion.a>
-            ))}
+        <div className="flex flex-col md:items-end md:justify-between h-full py-2">
+          <div className="flex gap-8">
+            <a href="https://www.linkedin.com/in/priyadharsini-v-270a383b8" target="_blank" rel="noopener noreferrer" className="p-3 bg-white border border-[#EAECF0] rounded-xl text-[#667085] hover:text-[#7F56D9] hover:border-[#D6BBFB] transition-all shadow-sm">
+              <Linkedin size={24} />
+            </a>
+            <a href="https://www.behance.net/priyadharsiniv" target="_blank" rel="noopener noreferrer" className="p-3 bg-white border border-[#EAECF0] rounded-xl text-[#667085] hover:text-[#7F56D9] hover:border-[#D6BBFB] transition-all shadow-sm">
+              <BehanceIcon size={24} />
+            </a>
           </div>
           
-          <div className="text-xs uppercase tracking-widest opacity-40 font-medium">
-            © 2026 Priyadharsini V Design.
+          <div className="mt-12 md:mt-0 text-[12px] font-medium text-[#667085]">
+            © {new Date().getFullYear()} Priyadharsini V Portfolio. <br className="md:hidden" /> Crafted with intentionality.
           </div>
         </div>
       </div>
