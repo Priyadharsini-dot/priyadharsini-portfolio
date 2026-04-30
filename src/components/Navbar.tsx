@@ -26,7 +26,7 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
 
   const navLinks = [
     { name: 'Work', id: 'work' },
-    { name: 'Visuals', id: 'gallery' },
+    { name: 'Visuals', id: 'visuals' },
     { name: 'About', action: onAboutClick },
     { name: 'Resume', href: RESUME_LINK, external: true }
   ];
@@ -51,20 +51,20 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
       >
         <button 
           onClick={onHomeClick}
-          className="font-bold text-[20px] tracking-tight hover:text-[#7F56D9] transition-colors"
+          className="font-bold text-xl tracking-tight hover:text-accent-primary transition-colors text-brand-ink"
         >
-          Priyadharsini V<span className="text-[#7F56D9]">.</span>
+          Priyadharsini V<span className="text-accent-primary">.</span>
         </button>
         
         <div className="flex items-center gap-10">
-          <div className="hidden lg:flex items-center gap-2 px-4 py-2 bg-[#F9FAFB] rounded-full border border-[#EAECF0] shrink-0">
+          <div className="hidden lg:flex items-center gap-2 px-4 py-2 bg-brand-bg rounded-full border border-brand-line shrink-0">
             <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-[10px] uppercase tracking-widest font-bold text-[#667085]">
+            <span className="text-[10px] uppercase tracking-widest font-bold text-brand-muted">
               Available for projects
             </span>
           </div>
           
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-8 text-brand-muted">
             {/* Desktop Links */}
             <div className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
@@ -74,7 +74,7 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-bold text-[#667085] hover:text-[#7F56D9] transition-all"
+                    className="text-sm font-bold hover:text-accent-primary transition-all"
                   >
                     {link.name}
                   </a>
@@ -82,7 +82,7 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
                   <button 
                     key={link.name}
                     onClick={() => handleNavLinkClick(link)}
-                    className="text-sm font-bold text-[#667085] hover:text-[#7F56D9] transition-all"
+                    className="text-sm font-bold hover:text-accent-primary transition-all"
                   >
                     {link.name}
                   </button>

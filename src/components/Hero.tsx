@@ -16,15 +16,15 @@ export function Hero() {
             transition={{ duration: 0.8 }}
             className="mb-8 md:mb-12"
           >
-            <span className="text-[14px] font-bold text-[#7F56D9] uppercase tracking-[0.2em] mb-4 block">
+            <span className="text-sm font-bold text-accent-primary uppercase tracking-[0.2em] mb-4 block">
               UI / UX Designer & Visual Storyteller
             </span>
-            <h1 className="leading-[1.1] md:leading-[1.1] mb-8 max-w-4xl">
-              Hi, I’m <span className="text-[#0A0A0B]">Priyadharsini V</span> <br />
-              <span className="text-[#0A0A0B]/40">UI/UX Designer crafting intuitive digital experiences.</span>
+            <h1 className="mb-8 max-w-4xl">
+              Hi, I’m <span className="text-brand-ink">Priyadharsini V.</span> <br />
+              <span className="text-brand-ink/40">I craft intuitive digital experiences that matter.</span>
             </h1>
-            <p className="text-[18px] md:text-[24px] text-[#667085] max-w-2xl leading-relaxed">
-              I design user-friendly interfaces by understanding real user problems and creating simple solutions.
+            <p className="text-lg md:text-xl text-brand-muted max-w-2xl leading-relaxed">
+              Transforming complex problems into simple, human-centric design solutions through research and intentionality.
             </p>
         </motion.div>
         
@@ -38,7 +38,7 @@ export function Hero() {
             href={RESUME_LINK} 
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center gap-3 px-8 py-4 bg-[#7F56D9] text-white rounded-xl font-bold hover:bg-[#6941C6] transition-all shadow-lg shadow-purple-500/20 w-full sm:w-auto"
+            className="flex items-center justify-center gap-3 px-8 py-4 bg-[#7F56D9] text-white rounded-xl font-bold hover:bg-[#6941C6] transition-all w-full sm:w-auto"
           >
             <FileText size={20} /> View Resume
           </a>

@@ -23,6 +23,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
           src={project.coverImage}
           alt={project.title}
           referrerPolicy="no-referrer"
+          onError={(e) => {
+            if (project.coverFallback) {
+              (e.target as HTMLImageElement).src = project.coverFallback;
+            }
+          }}
           className="w-full h-full object-cover transition-all duration-700 ease-out scale-100 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-[#7F56D9]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -35,9 +40,12 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
       </div>
       
       <div className="px-2">
-        <span className="text-[12px] font-bold text-[#7F56D9] uppercase tracking-[0.2em] mb-2 block">{project.category}</span>
-        <h3 className="text-[24px] md:text-[28px] font-bold text-[#0A0A0B] group-hover:text-[#7F56D9] transition-colors">{project.title}</h3>
-        <p className="text-[16px] text-[#667085] mt-2 line-clamp-2">{project.description}</p>
+        <span className="text-sm font-bold text-accent-primary uppercase tracking-[0.2em] mb-3 block">{project.category}</span>
+        <h3 className="group-hover:text-accent-primary transition-colors">{project.title}</h3>
+        <p className="mt-3 line-clamp-2">{project.description}</p>
+        <div className="mt-6 flex items-center gap-2 text-sm font-bold text-accent-primary opacity-0 group-hover:opacity-100 transition-all transform translate-y-1 group-hover:translate-y-0">
+          View Detailed Case Study <ArrowUpRight size={16} />
+        </div>
       </div>
     </motion.div>
   );

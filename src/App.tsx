@@ -5,7 +5,7 @@ import { Hero } from './components/Hero';
 import { ProjectCard } from './components/ProjectCard';
 import { CaseStudy } from './components/CaseStudy';
 import { About } from './components/About';
-import { DesignGallery } from './components/DesignGallery';
+import { DribbbleSection } from './components/DribbbleSection';
 import { Footer } from './components/Footer';
 import { PROJECTS } from './constants';
 import { Project } from './types';
@@ -41,12 +41,12 @@ export default function App() {
             viewport={{ once: true }}
             className="inline-block"
           >
-            <span className="text-[14px] font-bold text-[#7F56D9] uppercase tracking-[0.2em] mb-4 block">
+            <span className="text-sm font-bold text-accent-primary uppercase tracking-[0.2em] mb-4 block">
               Case Studies
             </span>
-            <h2 className="leading-[1.2]">
+            <h2>
               Solving problems through <br className="hidden md:block" />
-              <span className="text-[#0A0A0B]/40">user-centric intentionality.</span>
+              <span className="text-brand-ink/30">user-centric intentionality.</span>
             </h2>
           </motion.div>
         </div>
@@ -61,8 +61,8 @@ export default function App() {
           ))}
         </div>
       </section>
-
-      <DesignGallery />
+      
+      <DribbbleSection />
 
       <About />
       

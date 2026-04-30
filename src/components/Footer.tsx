@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail, Dribbble } from 'lucide-react';
 
 const BehanceIcon = ({ size = 24 }) => (
   <svg 
@@ -30,17 +30,20 @@ export function Footer() {
         </div>
         
         <div className="flex flex-col md:items-end md:justify-between h-full py-2">
-          <div className="flex gap-8">
-            <a href="https://www.linkedin.com/in/priyadharsini-v-270a383b8" target="_blank" rel="noopener noreferrer" className="p-3 bg-white border border-[#EAECF0] rounded-xl text-[#667085] hover:text-[#7F56D9] hover:border-[#D6BBFB] transition-all shadow-sm">
-              <Linkedin size={24} />
+          <div className="flex gap-4">
+            <a href="https://www.linkedin.com/in/priyadharsini-v-270a383b8" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="p-3 bg-white border border-[#EAECF0] rounded-xl text-[#667085] hover:text-[#7F56D9] hover:border-[#D6BBFB] transition-all shadow-sm">
+              <Linkedin size={20} />
             </a>
-            <a href="https://www.behance.net/priyadharsiniv" target="_blank" rel="noopener noreferrer" className="p-3 bg-white border border-[#EAECF0] rounded-xl text-[#667085] hover:text-[#7F56D9] hover:border-[#D6BBFB] transition-all shadow-sm">
-              <BehanceIcon size={24} />
+            <a href="https://www.behance.net/priyadharsiniv" target="_blank" rel="noopener noreferrer" title="Behance" className="p-3 bg-white border border-[#EAECF0] rounded-xl text-[#667085] hover:text-[#7F56D9] hover:border-[#D6BBFB] transition-all shadow-sm">
+              <BehanceIcon size={20} />
+            </a>
+            <a href="https://dribbble.com/Priyadharsini_V" target="_blank" rel="noopener noreferrer" title="Dribbble" className="p-3 bg-white border border-[#EAECF0] rounded-xl text-[#667085] hover:text-[#7F56D9] hover:border-[#D6BBFB] transition-all shadow-sm">
+              <Dribbble size={20} />
             </a>
           </div>
           
           <div className="mt-12 md:mt-0 text-[12px] font-medium text-[#667085]">
-            © {new Date().getFullYear()} Priyadharsini V Portfolio. <br className="md:hidden" /> Crafted with intentionality.
+            © {new Date().getFullYear()} Priyadharsini V Portfolio.
           </div>
         </div>
       </div>

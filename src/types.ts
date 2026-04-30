@@ -4,6 +4,7 @@ export interface CaseStudySection {
   content: string;
   image?: string;
   imageAlt?: string;
+  fallback?: string;
 }
 
 export interface Project {
@@ -12,6 +13,7 @@ export interface Project {
   title: string;
   category: string;
   coverImage: string;
+  coverFallback?: string;
   description: string;
   overview: string;
   context: string;
@@ -20,11 +22,11 @@ export interface Project {
   problem: string;
   research: string;
   painPoints: string[];
-  userJourney: string;
-  userFlow: string;
+  userJourney?: string;
+  userFlow?: string;
   uiDesign: string;
   finalUiImages?: string[];
-  iterations: string;
+  iterations?: string;
   solution: string;
   outcome: {
     metrics: string[];

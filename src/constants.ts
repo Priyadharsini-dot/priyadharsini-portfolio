@@ -6,28 +6,23 @@ export const PROJECTS: Project[] = [
     slug: 'car-rental-app',
     title: 'Quickky Car Rental',
     category: 'Mobile / UX Design',
-    coverImage: '/input_file_1.png',
+    coverImage: '/input_file_0.png',
+    coverFallback: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&q=80&w=1600',
     description: 'Simplifying the car booking process with transparency and ease.',
     overview: 'Quickky is a mobile-first solution aimed at bridging the gap between desire and mobility.',
     context: 'The car rental industry is often perceived as slow and untrustworthy. This project sought to redesign the digital experience to prioritize speed, transparency, and user autonomy.',
     myRole: 'UI/UX Designer',
     targetUsers: 'Urban professionals and travelers aged 22-45 who value efficiency and price clarity.',
-    problem: 'Users find it difficult to book cars efficiently. Existing platforms are cluttered with hidden fees and complex navigation, leading to high drop-off rates during the checkout process.',
-    research: 'Through 1:1 user interviews and competitive benchmarking, I discovered that 75% of users feel "anxiety" regarding final price shifts. Primary research focused on the "moment of commitment"—the point where users decide to pay.',
+    problem: 'Users encounter significant friction due to cluttered interfaces, lack of pricing transparency, and complex booking steps that lead to high drop-off rates.',
+    research: 'Users prefer clear pricing and simple booking experiences, while complex flows and hidden charges lead to drop-offs and lower trust.',
     painPoints: [
-      'Lack of upfront total price transparency.',
-      'Overwhelming mandatory upselling during booking.',
-      'Complex document verification processes.',
-      'Long queues at physical pick-up locations.'
+      'Cluttered UI and lengthy booking forms',
+      'Lack of pricing transparency',
+      'High booking drop-offs due to complex steps',
+      'Unclear availability and rental policies'
     ],
     userJourney: 'Alex lands at the airport -> Opens app -> Filters by "Ready for Pickup" -> Sees total price including all fees -> 1-tap booking with saved profile -> Receives digital key code.',
-    userFlow: 'Splash -> Global Health Check -> Search/Filter -> Select Vehicle -> Transparent Fare Breakdown -> Fast Checkout -> Digital Key Delivery.',
     uiDesign: 'A high-contrast clean aesthetic with a palette of Soft Rose and Charcoal. Large touch targets and bold typography ensure accessibility during on-the-go usage.',
-    finalUiImages: [
-      '/input_file_3.png',
-      '/input_file_4.png',
-      '/input_file_5.png'
-    ],
     iterations: 'Initial testing revealed users were confused by the "Insurance Selection" screen. I iterated by creating a simplified toggle system with clear "Most Popular" badges, which increased conversion by 18%.',
     solution: 'A simplified 3-step booking flow with a "No Surprise" pricing model and a clean, minimalist UI that reduces cognitive load.',
     outcome: {
@@ -44,8 +39,19 @@ export const PROJECTS: Project[] = [
         id: 'c1',
         title: 'Frictionless Booking',
         content: 'We stripped away every distraction. The interface focuses on essential steps, allowing users to find and book their ideal vehicle without navigating through endless menus.',
-        image: 'https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=1200&h=800',
         imageAlt: 'Car booking flow'
+      },
+      {
+        id: 'c2',
+        title: 'Interaction Model',
+        content: 'Smooth transitions and clear feedback states ensure the user feels in control at every stage of the booking journey.',
+        imageAlt: 'Interaction model'
+      },
+      {
+        id: 'c3',
+        title: 'Final Interfaces',
+        content: 'The final design prioritizes readability and ease of use, even in high-stress travel environments.',
+        imageAlt: 'Final UI screens'
       }
     ]
   },
@@ -54,26 +60,22 @@ export const PROJECTS: Project[] = [
     slug: 'mealza-food-app',
     title: 'MealZa',
     category: 'Food Delivery / Meal Planning',
-    coverImage: '/input_file_2.png',
+    coverImage: 'https://priyadharsiniv-portfolio.vercel.app/images/mini-cover.jpg',
+    coverFallback: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&q=80&w=1600',
     description: 'Empowering home cooks with intelligent meal planning and recipe discovery.',
     overview: 'MealZa is a kitchen companion that streamlines the journey from craving to cooking.',
     context: 'Modern users have an abundance of recipes but lack the time to organize them into cohesive meal plans, leading to food waste and "decision paralysis."',
     myRole: 'UI/UX Designer',
     targetUsers: 'Busy professionals and health-conscious home cooks.',
-    problem: 'Users struggle with disorganized meal planning and food waste.',
-    research: 'I conducted observational studies of grocery shopping patterns. Data showed that "planless" shopping leads to 40% more food waste. Users expressed a desire for an app that "knows what is in my fridge."',
+    problem: 'Users struggle with disorganized meal planning and food waste, often feeling overwhelmed by recipe discovery without a clear structure.',
+    research: 'Planless grocery shopping leads to food waste and inefficient ingredient usage. Users need a smarter way to plan meals and discover relevant recipes without feeling overwhelmed.',
     painPoints: [
       'Fragmented experience between recipe discovery and shopping lists.',
       'Food waste from buying ingredients serving only one specific recipe.',
       'Choice paralysis when browsing hundreds of disconnected recipes.'
     ],
     userJourney: 'Sarah receives a notification with a recipe based on her pantry -> Taps "Add to Weekly Plan" -> App automatically identifies missing items -> Sarah adds them to the cart -> Ingredients delivered by 6 PM.',
-    userFlow: 'Home -> AI Pantry Check -> Suggested Recipes -> Add to Meal Plan -> Auto-Grocery Generation -> Secure Checkout.',
     uiDesign: 'Used warm, appetizing colors (Sage Green and Saffron) to evoke freshness and healthy living.',
-    finalUiImages: [
-      '/input_file_6.png',
-      '/input_file_0.png'
-    ],
     iterations: 'Early prototypes lacked a "leftover" feature. After feedback, I added a "Waste Warrior" mode that suggests recipes based specifically on items about to expire.',
     solution: 'Simplified recipe management and AI-integrated shopping flows.',
     outcome: {
@@ -90,8 +92,13 @@ export const PROJECTS: Project[] = [
         id: 'm1',
         title: 'AI Recipe Engine',
         content: 'Personalized meal suggestions based on taste, dietary needs, and ingredients already in your kitchen. It’s like having a chef who knows your pantry.',
-        image: 'https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&q=80&w=1200&h=800',
         imageAlt: 'AI Recipe interface'
+      },
+      {
+        id: 'm2',
+        title: 'Visual Flavors',
+        content: 'Clean layouts with vibrant food photography encourage exploration and healthy habits.',
+        imageAlt: 'Meal planning interface'
       }
     ]
   },
@@ -100,29 +107,24 @@ export const PROJECTS: Project[] = [
     slug: 'hospitall-management',
     title: 'HospitALL',
     category: 'Web App / SaaS Design',
-    coverImage: 'https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&q=80&w=1600&h=900',
+    coverImage: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600&h=900',
     description: 'A smarter way to manage hospital operations and patient flow.',
     overview: 'HospitALL is a unified command center for healthcare professionals to optimize care delivery.',
     context: 'Hospital administration is often bogged down by legacy systems that don’t talk to each other. This project aimed to create a real-time source of truth for patient management.',
     myRole: 'UI/UX Designer',
     targetUsers: 'Hospital administrators, doctors, and nursing staff.',
-    problem: 'Hospital management tasks are slow and prone to errors. Doctors face notification fatigue and scheduling conflicts due to fractured visibility of patient data.',
-    research: 'I shadowed three clinical teams for 48 hours. I observed that 25% of doctor downtime was caused by waiting for manual record retrieval. Staff interviews highlighted "mental burnout" from complex UI.',
+    problem: 'Healthcare efficiency is hindered by manual scheduling errors, fragmented patient data access, and friction-filled patient booking experiences.',
+    research: 'Manual processes and unconnected systems slow down work, and complicated interfaces make it harder and more stressful for staff.',
     painPoints: [
-      'Inconsistent patient records across departments.',
-      'Manual scheduling leading to double-booked sessions.',
-      'Legacy software that requires 10+ clicks for simple entries.'
+      'Manual scheduling leads to errors and double bookings, affecting overall efficiency.',
+      'Doctors struggle to manage and access patient information efficiently.',
+      'Patients face friction due to mandatory account creation when booking appointments.',
+      'Patients find rescheduling appointments confusing and lacking flexibility.'
     ],
     userJourney: 'Doctor logs in -> Sees high-level patient queue -> Taps patient for full history (lab results, previous visits) -> Adds new record -> Nurse receives instant update for post-op care.',
-    userFlow: 'Provider Login -> Interactive Floor Map -> Patient Status Ticker -> Patient Detail View -> Order Management -> Hand-off Sync.',
     uiDesign: 'Selected a clinical but calming blue palette, compliant with accessibility standards (WCAG AA).',
-    finalUiImages: [
-      'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1600',
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1600',
-      'https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&q=80&w=1600'
-    ],
     iterations: 'User testing showed that doctors preferred a "gesture-first" interface on tablets. We shifted from button-heavy forms to swipeable action cards for patient status updates.',
-    solution: 'A unified SaaS portal with Conflict Detection and 1-click scheduling.',
+    solution: 'A centralized platform with role-based dashboards for doctors and admins, and an intuitive web interface for patients to simplify appointment management.',
     outcome: {
       metrics: [
         '60% faster patient registration.',
@@ -137,7 +139,6 @@ export const PROJECTS: Project[] = [
         id: 'h1',
         title: 'The Unified Dashboard',
         content: 'Admins can manage the entire facility from one view, while doctors get a dedicated space to track patient history and manage their specific sessions.',
-        image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200&h=800',
         imageAlt: 'Admin Dashboard interface'
       }
     ]
