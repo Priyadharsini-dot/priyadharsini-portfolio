@@ -18,7 +18,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) =>
       className="group cursor-pointer"
       onClick={onClick}
     >
-      <div className="relative aspect-[16/10] overflow-hidden bg-[#F9FAFB] mb-6 rounded-2xl border border-[#EAECF0] transition-all duration-500 group-hover:border-[#D6BBFB] group-hover:shadow-2xl group-hover:shadow-purple-500/5 group-hover:-translate-y-2">
+      <div className="relative aspect-[4/3] overflow-hidden bg-[#F9FAFB] mb-4 rounded-2xl border border-[#EAECF0] transition-all duration-500 group-hover:border-[#D6BBFB] group-hover:shadow-lg group-hover:-translate-y-1">
         <motion.img 
           src={project.coverImage}
           alt={project.title}

@@ -57,9 +57,12 @@ export function Navbar({ onHomeClick, onAboutClick }: NavbarProps) {
         </button>
         
         <div className="flex items-center gap-10">
-          <div className="hidden lg:flex items-center gap-2 px-4 py-2 bg-brand-bg rounded-full border border-brand-line shrink-0">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-            <span className="text-[10px] uppercase tracking-widest font-bold text-brand-muted">
+          <div className="hidden lg:flex items-center gap-2 px-0 py-2 bg-transparent shrink-0">
+            <div className="relative flex items-center justify-center">
+              <div className="w-2 h-2 bg-green-500 rounded-full animate-ping absolute opacity-75" />
+              <div className="relative w-2 h-2 bg-green-500 rounded-full" />
+            </div>
+            <span className="text-[10px] uppercase tracking-widest font-bold text-green-600">
               Available for projects
             </span>
           </div>
